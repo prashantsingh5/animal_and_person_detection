@@ -68,15 +68,22 @@ Processing high-resolution videos in real-time was challenging. Frame sampling a
 Achieving 80% accuracy required careful selection of categories and thresholds. Extensive testing and validation were performed to meet this requirement.
 
 ## Installation
-Clone the repository:
-```
-# Clone command would go here
-```
+1. Clone this repository:
+   ```
+   git clone https://github.com/prashantsingh5/animal_and_person_detection.git
+   cd animal_and_person_detection
+   ```
 
-Install dependencies:
-```
-# Installation command would go here
-```
+2. Create a virtual environment (recommended):
+   ```
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+
+3. Install required packages:
+   ```
+   pip install -r requirements.txt
+   ```
 
 Ensure you have a compatible GPU and CUDA installed for optimal performance.
 
@@ -84,21 +91,36 @@ Ensure you have a compatible GPU and CUDA installed for optimal performance.
 
 ### 1. Image Processing
 To process an image:
-```python
+```
+python parallel_detection.py
 # Replace the image_path variable in the main() function with the path to your test image.
 ```
 
 ### 2. Video Processing
 To process a video:
-```python
+
+```
+python parallel_detection.py
 # Replace the video_path variable in the main() function with the path to your test video.
 ```
 
-### 3. Validation
+### 3. Process Entire Dataset
+```bash
+python test_model.py --dataset "path/to/dataset" --output "path/to/output"
+```
+
+### 4. Validation
 To evaluate the model on a test dataset:
-```python
+```
+python validation.py
 # Replace <dataset_path> with the path to your test dataset.
 ```
+
+### 5. Testing the model
+```
+python test_model.py --dataset "Enter the dataset path"
+```
+
 
 ## File Structure
 - `parallel_detection.py`: Main implementation of the detection system with parallel processing.
