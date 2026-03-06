@@ -130,4 +130,4 @@ python test_model.py --dataset "Enter the dataset path"
 - `requirements.txt`: List of required Python packages.
 
 ## Results
-The system achieves over 85% accuracy on the test dataset, meeting the project requirements. Alerts are triggered for detected humans and animals, and the processed images/videos are saved with bounding boxes and labels.
+The system achieves over 87% accuracy on the test dataset, meeting the project requirements. Alerts are triggered for detected humans and animals, and the processed images/videos are saved with bounding boxes and labels.
